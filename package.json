@@ -11,8 +11,12 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
+    "axios": "*",
+    "body-parser": "*",
     "express": "^4.17.1",
-    "mongoose": "^5.12.5"
+    "mongoose": "^5.12.5",
+    "pug": "*",
+    "querystring": "*"
   },
   "devDependencies": {
     "@types/express": "^4.17.11",
