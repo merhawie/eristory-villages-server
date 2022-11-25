@@ -1,6 +1,6 @@
 {
   "index.html": {
-    "file": "assets/index.f2d2fcf2.js",
+    "file": "index.js",
     "src": "index.html",
     "isEntry": true,
     "dynamicImports": [
