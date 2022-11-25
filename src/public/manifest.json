@@ -1,14 +1,14 @@
 {
   "index.html": {
-    "file": "assets/index.10503f84.js",
+    "file": "assets/index.f2d2fcf2.js",
     "src": "index.html",
     "isEntry": true,
     "dynamicImports": [
-      "_mapbox-gl.b5843e66.js"
+      "_mapbox-gl.js"
     ]
   },
-  "_mapbox-gl.b5843e66.js": {
-    "file": "assets/mapbox-gl.b5843e66.js",
+  "_mapbox-gl.js": {
+    "file": "js/mapbox-gl.js",
     "isDynamicEntry": true
   }
 }
