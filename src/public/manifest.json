@@ -1,0 +1,14 @@
+{
+  "index.html": {
+    "file": "js/index.js",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "_mapbox-gl.js"
+    ]
+  },
+  "_mapbox-gl.js": {
+    "file": "js/mapbox-gl.js",
+    "isDynamicEntry": true
+  }
+}
