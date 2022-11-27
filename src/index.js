@@ -13,7 +13,7 @@ const app = express();
 
 app.set('view engine', 'pug');
 app.set('views', __dirname + '/views');
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 
 
@@ -147,6 +147,10 @@ app.get('/features', (req, res) => {
 			res.json(geojson);
 		}
 	});
+});
+
+app.get('*', (req, res) => {
+	res.redirect('/');
 });
 /*
 app.get('*', (req, res) => {
