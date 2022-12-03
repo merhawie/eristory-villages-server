@@ -45,7 +45,7 @@ app.post('/auth/getToken', async (req, res) => {
 });
 
 app.get('/auth/', async (req, res) => {
-	res.render('auth.pug');
+	res.render('auth.index.html');
 });
 
 app.post('/submit', (req, res) => {
