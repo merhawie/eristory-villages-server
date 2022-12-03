@@ -150,11 +150,11 @@ app.get('/features', (req, res) => {
 		}
 	});
 });
-
+/*
 app.get('*', (req, res) => {
 	res.redirect('/');
 });
-/*
+*/
 app.get('*', (req, res) => {
 	console.log();
 	Person.find({ igName: {$nin: [req.body.igName]} }, 'village', function (err, villages) {
@@ -168,7 +168,6 @@ app.get('*', (req, res) => {
 		}
 	});
 });
-*/
 app.listen(config.PORT, function () {
   console.log(`App currently running; navigate to localhost:${config.PORT} in a web browser.`);
 });
