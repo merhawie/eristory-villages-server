@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 
 const axios = require('axios');
@@ -45,6 +46,9 @@ app.post('/auth/getToken', async (req, res) => {
 });
 
 app.get('/auth/', async (req, res) => {
+	fs.readFile(__dirname + '/views/auth.index.html', 'utf8', (err, html) => {
+        	res.send(html);
+	});
 	res.render('auth.index.html');
 });
 
