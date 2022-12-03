@@ -44,6 +44,10 @@ app.post('/auth/getToken', async (req, res) => {
 	res.json(auth_resp.data);
 });
 
+app.get('/auth/', async (req, res) => {
+	res.render('auth.pug');
+});
+
 app.post('/submit', (req, res) => {
 	let data = req.body;
 	let person = {
