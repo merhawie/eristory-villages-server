@@ -49,7 +49,6 @@ app.get('/auth/', async (req, res) => {
 	fs.readFile(__dirname + '/views/auth.index.html', 'utf8', (err, html) => {
         	res.send(html);
 	});
-	res.render('auth.index.html');
 });
 
 app.post('/submit', (req, res) => {
